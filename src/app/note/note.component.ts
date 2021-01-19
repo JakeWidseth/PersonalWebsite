@@ -24,6 +24,9 @@ export class NoteComponent implements OnInit {
   AddNote() {
     if(this.note.name != "" && this.note.message != "") {
       this.firestore.collection("Notes").add(this.note);
+      //clear text
+      this.note.name = "";
+      this.note.message = "";
     }
     
   }
