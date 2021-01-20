@@ -1,0 +1,18 @@
+<ul>
+    <li *ngFor="let dat of data" class="note">
+      {{dat.name}} <h6>{{dat.message}}</h6>
+    </li>
+  </ul>
+  
+  <label for="Name">Name</label>
+  <input [(ngModel)]="note.name" type="text" id="Name">
+  <br>
+  <label for="Message">Message</label>
+  <input [(ngModel)]="note.message" type="text" id="Message">
+  <br>
+  <button (click)="AddNote()">Add</button>
+  
+  <div>
+    <h6>{{note.name}}</h6>
+  </div>
+  
