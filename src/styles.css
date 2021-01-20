@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
 body {
     height: 100%;
     overflow: auto;
@@ -24,8 +29,8 @@ html {
 }
 /*Navbar*/
 #navlogo {
-    margin:auto;
-    width:80%;
+    margin: auto;
+    width: 80%;
     clear: both;
     height: 6vh;
 }
@@ -42,7 +47,6 @@ html {
     
 }
 #logo p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:  2.5vh;
 }
 #vl {
@@ -52,14 +56,15 @@ html {
     border-right: 2px solid #a23e48ff;
 
 }
-#navbar {
+#navbar{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 75%;
     padding: 0;
     height: 100%;
+    margin: 0;
 }
 
 #navbar a {
@@ -68,27 +73,21 @@ html {
     font-size: 2.5vh;
     color: black;
     cursor: pointer;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
 }
 
-#bar {
-    
-    width: 0px;
-    height: 5px;
-    background-color: #a23e48ff;
-    top: 5vh;
-    left: 45%;
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    bottom: -2px;
     position: absolute;
-    transition: .3s ease-in-out;
-    -webkit-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
-}
-#navbar a:nth-of-type(1):hover ~ #bar {
-    width: 50px;
-    left: 45%;
-}
-#navbar a:nth-of-type(2):hover ~ #bar {
-    width: 100px;
-    left: 64.5%;
-}
+    background: #a23e48ff;
+    transition: width 0.4s ease-in-out 0s, right 0.4s ease-in-out 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+  }
