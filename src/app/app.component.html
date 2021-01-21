@@ -7,14 +7,16 @@
         <div id="vl"></div>
     </div>
     <div id="navbar">
-        
+        <a routerLink="/Home">Home</a>
         <a routerLink="/Note">Note</a>
-        <a routerLink="/Note">Also Note</a>
+        <a routerLink="/About">About Me</a>
     </div>
     
     
   </div>
 
+  <div id="routerBody">
+    <router-outlet></router-outlet>
+  </div>
   
-  <router-outlet></router-outlet>
 </div>

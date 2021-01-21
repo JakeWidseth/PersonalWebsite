@@ -7,14 +7,13 @@
 }
 body {
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
 }
 
 html {
     overflow: hidden;
     height: 100%;
 }
-
 .bg-svg {
     background: url("./assets/WebsiteBackground.svg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -22,10 +21,27 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
-
 #container {
     height: 100%;
     width: 100%;
+}
+/**Approuter Body**/
+#routerBody {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color:bisque;
+    height: 100%;
+    margin-top: 1vh;
+    position: fixed;
+    left:15%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+#routerBody::-webkit-scrollbar {
+    display: none;
 }
 /*Navbar*/
 #navlogo {
@@ -33,6 +49,7 @@ html {
     width: 80%;
     clear: both;
     height: 6vh;
+    margin-top: 1vh;
 }
 #logo {
     display: flex;
@@ -86,8 +103,17 @@ a:after {
     position: absolute;
     background: #a23e48ff;
     transition: width 0.4s ease-in-out 0s, right 0.4s ease-in-out 0s;
-    width: 0;
+    width: 0em;
   }
-  a:hover:after { 
+a:hover:after { 
     width: 100%; 
-  }
+}
+a:nth-child(1):after {
+    background: #a23e48ff;
+}
+a:nth-child(2):after {
+    background: #ff3c38ff;
+}
+a:nth-child(3):after {
+    background: #ff8c42ff;
+}

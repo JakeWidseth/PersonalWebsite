@@ -9,11 +9,15 @@ import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { environment } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms';
 import { NoteComponent } from './note/note.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NoteComponent
+    NoteComponent,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
