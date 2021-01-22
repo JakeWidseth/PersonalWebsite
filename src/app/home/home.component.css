@@ -1,0 +1,54 @@
+#homeContainer {
+    flex-basis: 100%;
+    width: 100%;
+    height: 84%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+#homeContainer::-webkit-scrollbar {
+    display: none;
+}
+/**Content Flex Classes**/
+.break {
+    flex-basis: 100%;
+}
+.small {
+    display: flex;
+    flex-basis: 25%;
+    height: 30%;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}
+.medium {
+    display: flex;
+    flex-basis: 50%;
+    height: 30%;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}
+.large {
+    display: flex;
+    flex-basis: 75%;
+    height: 30%;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    justify-self: flex-start;
+}
+.right {
+    justify-self: right;
+}
+.center {
+    justify-self: center;
+}

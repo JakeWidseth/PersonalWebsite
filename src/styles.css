@@ -25,17 +25,26 @@ html {
     height: 100%;
     width: 100%;
 }
+/**Footer**/
+footer {
+    margin-top: auto;
+    display: flex;
+    align-content:  space-between;
+    justify-content: center;
+    width: 100%;
+    height: 8%;
+}
+footer p {
+    position: relative;
+    margin: auto;
+}
 /**Approuter Body**/
 #routerBody {
-    width: 70%;
     display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    background-color:bisque;
-    height: 100%;
-    margin-top: 1vh;
-    position: fixed;
-    left:15%;
+    flex-direction: column;
+    width: 100%;
+    height: 92%;
+    margin-top: 1%;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -48,8 +57,8 @@ html {
     margin: auto;
     width: 80%;
     clear: both;
-    height: 6vh;
-    margin-top: 1vh;
+    height: 6%;
+    margin-top: 1%;
 }
 #logo {
     display: flex;
@@ -117,3 +126,6 @@ a:nth-child(2):after {
 a:nth-child(3):after {
     background: #ff8c42ff;
 }
+
+
+
