@@ -7,7 +7,8 @@ import { NoteComponent } from './note/note.component'
 const routes: Routes = [
   {path: 'Note', component: NoteComponent },
   {path: 'Home', component: HomeComponent },
-  {path: 'About', component: AboutComponent }
+  {path: 'About', component: AboutComponent },
+  {path: '', redirectTo: 'Home', pathMatch: 'full'}
 
 
 ];

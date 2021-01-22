@@ -1,3 +1,6 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 #homeContainer {
     flex-basis: 100%;
     width: 100%;
@@ -10,6 +13,7 @@
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    perspective: 3px;
 }
 #homeContainer::-webkit-scrollbar {
     display: none;
@@ -27,34 +31,60 @@ app-footer {
 .small {
     display: flex;
     flex-basis: 25%;
-    height: 30%;
-    background-color: aliceblue;
+    min-height: 30%;
     justify-content: center;
     align-items: center;
 }
 .medium {
     display: flex;
     flex-basis: 50%;
-    height: 30%;
-    background-color: aliceblue;
+    min-height: 30%;
     justify-content: center;
     align-items: center;
 }
 .large {
     display: flex;
     flex-basis: 75%;
-    height: 30%;
-    background-color: aliceblue;
+    min-height: 30%;
     justify-content: center;
     align-items: center;
 }
 
 .left {
-    justify-self: flex-start;
+    margin-right: auto;
 }
 .right {
-    justify-self: right;
+    margin-left: auto;
 }
 .center {
-    justify-self: center;
+    margin-left:auto;
+    margin-right: auto;
+}
+/**Image**/
+.blockImg {
+    width: 10vh;
+}
+/**Parallax Effect**/
+.far {
+    transform: translateZ(-3px) scale(1);
+    z-index: -2;
+}
+.close {
+    transform: translateZ(-2px) scale(1);
+    z-index: -1;
+}
+.closest {
+    z-index: 0;
+}
+/**Floating animation**/
+.blockImg {
+    animation: Float 5s ease-in-out infinite;
+}
+@keyframes Float {
+    0%, 100% {
+        margin-top: -20%;
+    }
+    50% {
+        margin-top: 10%;
+    }
 }
