@@ -23,6 +23,7 @@ app-footer {
     height: 8%;
     align-self: flex-end;
     margin: 0;
+    animation: Fadein 4s ease-in-out;
 }
 /**Content Flex Classes**/
 .break {
@@ -66,14 +67,15 @@ app-footer {
 }
 /**Parallax Effect**/
 .far {
-    transform: translateZ(-3px) scale(1);
+    transform: translateZ(-3px) scale(.5);
     z-index: -2;
 }
 .close {
-    transform: translateZ(-2px) scale(1);
+    transform: translateZ(-2px) scale(.75);
     z-index: -1;
 }
 .closest {
+    transform: translateZ(-1px) scale(1);
     z-index: 0;
 }
 /**Floating animation**/
@@ -82,9 +84,32 @@ app-footer {
 }
 @keyframes Float {
     0%, 100% {
-        margin-top: -20%;
+        margin-top: 0%;
     }
     50% {
-        margin-top: 10%;
+        margin-top: -30%;
+    }
+}
+/**Opening animation*/
+
+#homeContainer:first-child {
+    animation: Fadeup 3s ease-in-out;
+}
+@keyframes Fadeup {
+    0% {
+        color: transparent;
+        margin-top:50%;
+    }
+    100% {
+        color: black;
+        margin-top: 1%;
+    }
+}
+@keyframes Fadein {
+    0%, 75% {
+        color: transparent;
+    }
+    100% {
+        color: black;
     }
 }
