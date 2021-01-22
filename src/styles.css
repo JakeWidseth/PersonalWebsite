@@ -26,7 +26,8 @@ html {
     width: 100%;
 }
 /**Footer**/
-footer {
+/**footer {
+    position: relative;
     margin-top: auto;
     display: flex;
     align-content:  space-between;
@@ -37,7 +38,8 @@ footer {
 footer p {
     position: relative;
     margin: auto;
-}
+}**/
+
 /**Approuter Body**/
 #routerBody {
     display: flex;
