@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'PersonalWebsite';
+  title = 'Jake Widseth';
 
   ngOnInit(): void {
     document.body.classList.add('bg-svg');
