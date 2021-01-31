@@ -1,11 +1,10 @@
-.small {
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 10px;
-}
-.medium {
+.small, .medium, .large {
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
 }
 p {
     margin: 10px;
+}
+.break {
+    height: 5%;
 }
